@@ -22,7 +22,7 @@ export default function Contact() {
     const formData = new FormData(event.target);
     try {
       const response = await axios.post(
-        import.meta.env.VITE_APP_FORM_URL,
+        import.meta.env.VITE_FORM_URL,
         formData
       );
       console.log(response); // log the response for debugging purposes
