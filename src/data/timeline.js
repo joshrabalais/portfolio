@@ -1,7 +1,7 @@
 export default [
   {
     year: "2021",
-    title: "Discoverd Coding and Began Education",
+    title: "Discovered Coding and Began Education",
     details:
       "Through a love for film and desire to delve into effects for a film, I discovered the world of programming and became obsessed."
   },
@@ -9,7 +9,7 @@ export default [
     year: "2022",
     title: "Front End Development",
     details:
-      "After digging into Python, C++, and others, I discoverd the actual creation of websites, and all the possibilities with this skill set.",
+      "After digging into Python, C++, and others, I discovered the actual creation of websites, and all the possibilities with this skill set.",
   },
   {
     year: "2023",
