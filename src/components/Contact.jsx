@@ -27,14 +27,14 @@ export default function Contact() {
       );
       console.log(response); // log the response for debugging purposes
       setFormData({
-        name: "",
-        email: "",
-        message: "",
+        name: " ",
+        email: " ",
+        message: " ",
       }); // reset form data to empty strings
       setIsFormSubmitted(true); // set form submitted state to true
       // show a success message to the user
     } catch (error) {
-      console.error(error); // log the error for debugging purposes
+      console.log(error); // log the error for debugging purposes
       // show an error message to the user
     }
   };
@@ -43,7 +43,6 @@ export default function Contact() {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
-
   // add validation to email field
   const isEmailValid = emailRegex.test(formData.email);
 
@@ -58,7 +57,7 @@ export default function Contact() {
           <div className="mt-2">
             <Title className="text-center">
               {isFormSubmitted
-                ? `${formData.name} Name get back to you ASAP.`
+                ? `I'll get back to you ASAP.`
                 : "Contact"}
             </Title>
           </div>
@@ -97,7 +96,7 @@ export default function Contact() {
           <button
             type="submit"
             className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-stone-900 bg-gradient-to-r from-stone-500 to-gray-200 drop-shadow-md hover:from-stone-600 hover:to-gray-300 hover:text-white"
-          >
+         >
             Work With Me
           </button>
         </form>
@@ -105,3 +104,4 @@ export default function Contact() {
     </div>
   );
 }
+
